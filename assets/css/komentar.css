@@ -1,0 +1,145 @@
+/* ubah foto */
+.komentar-container {
+  width: 100%;
+  padding: 7rem 7%;
+}
+
+.komentar-container .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.komentar-container .row-komentar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.komentar-container .row-komentar .left-komentar {
+  flex: 1 1 45%;
+  word-break: break-all;
+}
+
+.komentar-container .row-komentar .left-komentar .detail-foto {
+  width: 100%;
+  height: 230px;
+  margin-bottom: 2.5rem;
+  border: 1px solid #000;
+  box-shadow: 6px 6px #000;
+  overflow: hidden;
+}
+
+.komentar-container .row-komentar .left-komentar .detail-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 250ms ease-in-out;
+}
+
+.komentar-container .row-komentar .left-komentar .detail-foto:hover img {
+  transform: scale(1.3);
+}
+
+.komentar-container .row-komentar .left-komentar h2 {
+  margin-bottom: 1.5rem;
+}
+
+.komentar-container .row-komentar .right-komentar {
+  word-break: break-all;
+  flex: 1 1 calc(55% - 2rem);
+}
+
+.komentar-container .row-komentar .right-komentar h2 {
+  margin-bottom: 1.5rem;
+}
+
+.komentar-container .row-komentar .right-komentar .card-komentar {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #000;
+  box-shadow: 8px 8px #000;
+}
+
+.komentar-container .row-komentar .right-komentar .card-komentar .profile {
+  margin-bottom: 1.3rem;
+  display: flex;
+}
+
+.komentar-container .row-komentar .right-komentar .card-komentar .profile .img {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.komentar-container
+  .row-komentar
+  .right-komentar
+  .card-komentar
+  .profile
+  .img::before {
+  position: absolute;
+  bottom: -65%;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background: #fff;
+  border-radius: 50%;
+}
+
+.komentar-container
+  .row-komentar
+  .right-komentar
+  .card-komentar
+  .profile
+  .img::after {
+  position: absolute;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  content: "";
+  background: #fff;
+  border-radius: 50%;
+}
+
+.komentar-container
+  .row-komentar
+  .right-komentar
+  .card-komentar
+  .profile
+  .users {
+  padding: 0.5rem;
+  border: 1px solid #000;
+  width: 100%;
+  word-wrap: break-word;
+  box-shadow: 3px 3px #555;
+}
+
+.komentar-container
+  .row-komentar
+  .right-komentar
+  .card-komentar
+  .profile
+  .users
+  h5 {
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 2px;
+  box-shadow: 1px 1px #555;
+}
+
+.hapus_komentar {
+  padding: 2px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #000;
+}

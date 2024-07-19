@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.2rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(250, 250, 250, 0.7);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.navbar .nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .nav-list a {
+  color: #000;
+  position: relative;
+}
+
+.navbar .nav-list a:hover {
+  color: #666;
+}
+
+.navbar .nav-list a::after {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #666;
+  transition: 200ms ease-in-out;
+}
+
+.navbar .nav-list a:hover::after {
+  width: 50%;
+}
+
+.navbar .nav-list a::before {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #666;
+  transition: 200ms ease-in-out;
+}
+
+.navbar .nav-list a:hover::before {
+  width: 50%;
+}
