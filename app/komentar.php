@@ -3,12 +3,14 @@
 require "../koneksi/config.php";
 
 session_start();
-if (!isset($_SESSION['id_users'])) {
-    header("Location: ../login.php");
-}
 
 if (!isset($_GET['id_foto'])) {
     header("Location: ../login.php");
+}
+
+if (!isset($_SESSION['id_users'])) {
+    echo "<script>alert('Anda harus login dahulu!');
+    window.location.href = '../login.php'</script>";
 }
 
 $id_foto = $_GET['id_foto'];
